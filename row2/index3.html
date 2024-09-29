@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You Baby</title>
+    <script src="../js/text.js"></script>
+    <script src="../js/move.js"></script>
+    <script src="../js/time.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+<style>
+    .zing-body-avatar{
+    text-align: center;
+    justify-content: center;
+    border-radius: 100%;
+}
+.zing-body-avatar a{
+    display: inline-block;
+   width: 160px;
+   height: 160px;
+   border-radius: 100%;
+   overflow: hidden;
+   border: 1px solid #12CBC4;
+}
+.zing-body-avatar a img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: 3s;
+ }
+ .zing-body-avatar h1{
+    margin-top:20px;
+    font-size: 30px;
+    text-transform: capitalize;
+ }
+.zing-body-avatar a img:hover {
+   transform: scale(2);
+}
+#myContent{
+	text-shadow: 2px 3px 3px #000; 
+	font-family:Microsoft YaHei;
+	font-weight:500;
+	font-size:20px;
+	color:#CCCCCC;
+}
+#show{
+	color:#CCCCCC;
+	text-shadow: 2px 3px 3px #222; 
+	font-family:Microsoft YaHei;
+	font-style:italic;
+	font-size:20px;
+}
+</style>
+
+</head>
+<body style="background-image: url(../img/avatar/naruto\ \(2\).jpeg);
+">
+   
+    <div class="zing-body-avatar">
+        <a href="https://www.facebook.com/kvedem2/">
+            <img class="avatar" src="../img/avatar/ava.png" alt="">
+        </a>
+        <h1 style="color: bisque;"  class="color-title">Đan Nguyên</h1>
+    </div>
+    <div  id="contentToWrite" style="display:none"> Xin Chào Baby <br>
+    Tên của baby là gì nhỉ ? <br>
+    Nhập tên của baby vào ô để tiếp tục nha 
+</a>
+		
+	</div>
+    <div class="zing-body-avatar">
+        <div  id="myContent">
+            
+        </div>
+        <div id="time"> <span id="show"></span>
+            <script type="text/javascript">				setTimeout("showTime()", 15000);			</script>
+        </div>
+    </div>
+   
+    <audio autoplay="autoplay" loop>
+        <source src="../music/list-song/binh yen.mp3"> 
+    </audio>
+    
+    
+    <script type="text/javascript">			writeContent(true);		</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+        var button = document.getElementById("button1");
+        console.log(button)
+    button.addEventListener('click', function() {
+        var username = document.getElementById('username').value;
+        alert('Tên của bạn là: ' + username);
+    });
+    </script>
+</body>
+</html>
