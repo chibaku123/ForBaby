@@ -16,7 +16,7 @@ function showTime() {
 		}
 		else{
 			localStorage.setItem("username", name);
-			window.location = "./Row3/index.html"
+			window.location = "index1.html"
 		}
 	
 		
